@@ -1,0 +1,11 @@
+
+{% extends "_master.html" %}
+
+{% block content %}
+{% comment %} Todo código aqui {% endcomment %}
+<ul>
+    <li>Nome do user: {{request.user.username}}</li>
+    <li>email: {{request.user.email}}</li>
+    <li>Senha: {{request.user.password}}</li>
+</ul>
+{% endblock content %}
